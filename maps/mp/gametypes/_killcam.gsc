@@ -6,8 +6,7 @@ init()
 	precacheString(&"PLATFORM_PRESS_TO_RESPAWN");
 	precacheShader("white");
 	
-    thread maps\mp\gametypes\_finalkillcam::init();
-    thread maps\mp\gametypes\_dBots::init();
+	thread maps\mp\gametypes\_finalkillcam::init(); 
     
 	level.killcam = maps\mp\gametypes\_tweakables::getTweakableValue( "game", "allowkillcam" );
 	
